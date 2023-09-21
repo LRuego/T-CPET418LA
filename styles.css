@@ -1,0 +1,161 @@
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+.stickyheader {
+  position: sticky;
+  top: 0;
+  background-color: #0175C3;
+  z-index: 100;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+
+  background-image:url("assets/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 40vw;
+  box-shadow: inset 0 0 0 100vmax rgba(1, 118, 195, 0.2);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cover .content1{
+  position: relative;
+  padding: 50px 20px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0px;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 4.9vw;
+  line-height: 3.9vw;
+}
+
+h2 {
+  margin: 0px;
+  margin-left: 15%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.7vw;
+}
+
+h3 {
+  color: #1D242C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+}
+
+ul {
+  color: #1D242C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+}
+
+td {
+  color: #1D242C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8vw;
+}
+
+.cover .socials{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover .box {
+  margin: 5px;
+  padding: 10px;
+  background-color: #FAFAFA;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.fa-facebook {
+  background: #4267B2;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 400px;
+}
+
+.card {
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  margin: auto;
+  height: 400px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-div {
+  border-top:2px solid #1D242C;
+  width: 150px;
+}
+
+.fa-graduation-cap,.fa-code, .fa-gears {
+  color: #1D242C;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 69px;
+}
+
+.header-buttons {
+  border-radius: 20px;
+  border-width: 0px;
+  font-size: 14px;
+  height: 35px;
+  width: 100px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}

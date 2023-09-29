@@ -1,0 +1,131 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: #c7eeff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  color: #0176c3;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+/*Headers*/
+.big-heading {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-heading {
+  font-weight: 700;
+  display: inline;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/*Section*/
+.main-section {
+  /*background-color: #0176c3;*/
+  background-image: linear-gradient(to right, #fbfaff, #f5f5ff);
+}
+
+.section1 {
+  background-image: linear-gradient(to right, #fbfaff, #f5f5ff);
+}
+
+/*Navigation Bar*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/*Title Section*/
+#title .container-fluid {
+  background-image: url("../assets/cover.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: fixed;
+  padding: 3% 12% 7%;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  #title .container-fluid {
+    background-image: linear-gradient(to right, #fbfaff, #f5f5ff);
+    padding: 3% 12% 7%;
+  }
+}
+
+  .title-img {
+    height: 12rem;
+    border: 3px solid #fafafa;
+    border-radius: 50%;
+  }
+
+  /*Features*/
+  #features {
+    position: relative;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .features-col {
+    padding: 5%;
+  }
+
+  .feature-icon {
+    color: #0176c3;
+    margin: 1rem;
+  }
+
+  .feature-icon:hover {
+    color: white;
+  }
+
+  /*Footer*/
+  .foot-icon {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #1d242c;
+  }
+
+  .foot-text {
+    color: #1d242c;
+  }

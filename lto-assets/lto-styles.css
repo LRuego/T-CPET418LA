@@ -93,7 +93,7 @@ input[type=number]::placeholder {
     padding: 1px;
 }
 
-.name input {
+.name {
     width: 15rem;
 }
 
@@ -114,7 +114,7 @@ input[type=number]::placeholder {
 }
 
 /* HIGHER RES */
-@media screen and (min-device-width: 2560px) and (max-device-width: 5000px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 2560px) {
     .name {
         width: 40rem;
     }
@@ -128,7 +128,7 @@ input[type=number]::placeholder {
     }
 }
 
-@media screen and (min-device-width: 1440px) and (max-device-width: 2559px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1201px) and (max-device-width: 2559px) {
     .name {
         width: 23rem;
     }
@@ -146,9 +146,9 @@ input[type=number]::placeholder {
     }
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
     .name {
-        width: 15rem;
+        width: 17rem;
     }
 
     .street {

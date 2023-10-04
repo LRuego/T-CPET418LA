@@ -1,16 +1,16 @@
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
   margin-bottom: 0px;
-  background-color: #c7eeff;
+  background-image: linear-gradient(to right, #fbfaff, #f5f5ff);
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Quicksand', sans-serif;
-  color: #0176c3;
+  font-family: 'Titillium Web', sans-serif;
+  color: #1d242c;
 }
 
 p {
@@ -18,96 +18,96 @@ p {
 }
 
 .logo {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   border-radius: 100%;
 }
 
-/*Headers*/
-.big-heading {
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-.section-heading {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.testimonial-heading {
-  font-weight: 700;
-  display: inline;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-
-/*Section*/
-.main-section {
-  /*background-color: #0176c3;*/
-  background-image: linear-gradient(to right, #fbfaff, #f5f5ff);
-}
-
-.section1 {
-  background-image: linear-gradient(to right, #fbfaff, #f5f5ff);
-}
-
-/*Navigation Bar*/
-.navbar {
-  padding: 0 0 4.5rem;
-}
-
-.navbar-brand {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-/*Title Section*/
-#title .container-fluid {
+/*Cover*/
+.cover {
   background-image: url("../assets/cover.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: fixed;
-  padding: 3% 12% 7%;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+/*Navigation Bar*/
+.navbar {
+  background-color: #0175C3;
+}
+
+.nav-item {
+  padding: 0 12px;
+}
+
+/*Title Section*/
+#title {
+  text-align: left;
+}
+
+#title .col {
+  width: max-content;
+}
+
+#title h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+#title h2 {
+  color: white;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+#title .container-fluid  {
+  background-image: url("../assets/cover.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding:12% 3% 20%;
+  box-shadow: inset 0 0 0 100vmax rgba(1, 118, 195, 0.2);
+}
+
+/* MOBILE ONLY */
+@media screen and (max-width: 1024px) {
+  /*REMOVE/CHANGE BACKGROUND IMAGE*/
+  #title {
+    text-align: center;
+  }
+  
   #title .container-fluid {
     background-image: linear-gradient(to right, #fbfaff, #f5f5ff);
     padding: 3% 12% 7%;
   }
+
+  /*Fix Cards on Mobile*/
+  #cards .info {
+    margin-top: 2%;
+  }
 }
 
-  .title-img {
-    height: 12rem;
-    border: 3px solid #fafafa;
-    border-radius: 50%;
+  /*Cards*/
+  #cards .container-fluid {
+    padding-top: 30%;
+    color: transparent;
   }
 
-  /*Features*/
-  #features {
-    position: relative;
+  #footer .container-fluid {
+    padding-top: 6%;
   }
 
-  .feature-title {
-    font-size: 1.5rem;
-    font-weight: 900;
+  .card {
+    width: 80%;
   }
 
-  .features-col {
-    padding: 5%;
+  .fa-graduation-cap,.fa-code, .fa-gears {
+    color: #1D242C;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 69px;
   }
 
   .feature-icon {
@@ -123,9 +123,5 @@ p {
   .foot-icon {
     padding: 20px 10px;
     text-decoration: none;
-    color: #1d242c;
-  }
-
-  .foot-text {
     color: #1d242c;
   }

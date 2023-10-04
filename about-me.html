@@ -21,78 +21,118 @@
   <!--Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/index.html"><img class="logo" src="assets\logo.png"></a>
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="old-site\old-site.html"><button type="button" class="btn btn-light btn-lg button">HTML Site</button></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><button type="button" class="btn btn-light btn-lg button">CSS Site</button></a>
+      </li>
+    </ul>
+  </nav>
+
   <!--- Title Section -->
   <section class="main-section" id="title">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="/index.html"><img class="logo" src="assets\logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#newsletter">Newsletter</a>
-            </li>
-          </ul>
-          <a class="nav-link" href=""><button type="button" class="btn btn-dark btn-lg button">About Me</button></a>
-        </div>
-      </nav>
-      <div class="col-4">
+    <div class="container-fluid position-absolute">
+      <div class="col">
         <h1>LUKE ANDREI RUEGO</h1>
         <h2>Student and Programmer</h2>
       </div>
     </div>
   </section>
 
-
-  <!-- Features -->
-  <section class="section1" id="features">
+  <!-- Cards -->
+  <section class="section1" id="cards">
     <div class="container-fluid">
       <div class="row">
-        <div class="features-col col-lg-4">
+        <div class="info col-lg-4 d-flex justify-content-center">
           <div class="card">
+            <div class="card-header">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
             <div class="card-body">
-              <h1>Quality Service!</h1>
-              <p>test</p>
+              <h2>EDUCATION</h2>
+              <p>BS Computer Engineering (2024)</p>
             </div>
           </div>
         </div>
-        <div class="features-col col-lg-4">
-          <i class="feature-icon fa-solid fa-code fa-4x"></i>
-          <h3 class="feature-title">HTML and CSS Front-end</h3>
-          <p>With experience of using the Bootstrap 5 Framework</p>
+        <div class="info col-lg-4 d-flex justify-content-center">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="card-body">
+              <h2>CODING PROFICIENCIES</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">HTML & CSS</li>
+                <li class="list-group-item">MySQL</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">C++</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="features-col col-lg-4">
-          <i class="feature-icon fa-brands fa-android fa-4x"></i>
-          <h3 class="feature-title">Application Development</h3>
-          <p>Wtih experience in developing mobile apps using Flutter</p>
+        <div class="info col-lg-4 d-flex justify-content-center">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="card-body">
+              <H2>SKILLS</H2>
+              <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <td>Programming</td>
+                    <td>◼◼◼◼◻</td>
+                  </tr>
+                  <tr>
+                    <td>Copy & Pasting</td>
+                    <td>◼◼◼◼◼</td>
+                  </tr>
+                  <tr>
+                    <td>People Skills</td>
+                    <td>◼◻◻◻◻</td>
+                  </tr>
+                  <tr>
+                    <td>Gaming Skills</td>
+                    <td>◼◼◼◻◻</td>
+                  </tr>
+                  <tr>
+                    <td>Technical Repair</td>
+                    <td>◼◼◻◻◻</td>
+                  </tr>
+                  <tr>
+                    <td>Swimming</td>
+                    <td>◼◼◼◻◻</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="section1" id="footer">
-    <div class="container-fluid">
-      <a class="foot-icon fab fa-x-twitter" href="https:/x.com/"></a>
-      <a class="foot-icon fab fa-facebook-f" href="https://www.facebook.com/Luuuukeeeeeeee/"></a>
-      <a class="foot-icon fab fa-instagram" href="https://www.instagram.com/lukeasr/"></a>
-      <a class="foot-icon fab fa-github" href="https://github.com/LRuego"></a>
-      <p class="foot-text">© Copyright 2023 LRuego</p>
+    <div class="container-sm">
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="container-fluid">
+          <a class="foot-icon fab fa-x-twitter" href="https:/x.com/"></a>
+          <a class="foot-icon fab fa-facebook-f" href="https://www.facebook.com/Luuuukeeeeeeee/"></a>
+          <a class="foot-icon fab fa-instagram" href="https://www.instagram.com/lukeasr/"></a>
+          <a class="foot-icon fab fa-github" href="https://github.com/LRuego"></a>
+          <p>© Copyright 2023 LRuego</p>
+        </div>
+      </footer>
     </div>
-  </footer>
+  </section>
 </body>
 
 </html>

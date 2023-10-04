@@ -94,11 +94,11 @@ input[type=number]::placeholder {
 }
 
 .name input {
-    width: 33rem;
+    width: 15rem;
 }
 
 .street {
-    width: 50rem;
+    width: 15rem;
 }
 
 /* Footer */
@@ -113,13 +113,53 @@ input[type=number]::placeholder {
     font-weight: 700;
 }
 
-/* MOBILE/LOWER RES */
-@media (max-width: 1020px) {
-    .name input {
+/* HIGHER RES */
+@media screen and (min-device-width: 2560px) and (max-device-width: 5000px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .name {
+        width: 40rem;
+    }
+
+    .street {
+        width: 100rem;
+    }
+
+    .zip {
+        width: 10rem;
+    }
+}
+
+@media screen and (min-device-width: 1440px) and (max-device-width: 2559px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .name {
+        width: 23rem;
+    }
+
+    .street {
+        width: 40rem;
+    }
+
+    .zip {
+        width: 10rem;
+    }
+
+    #toa .card-body {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .name {
         width: 15rem;
     }
 
     .street {
         width: 15rem;
+    }
+
+    .zip {
+        width: 10rem;
+    }
+
+    #toa .card-body {
+        font-size: 1rem;
     }
 }

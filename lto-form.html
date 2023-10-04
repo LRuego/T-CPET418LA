@@ -42,27 +42,35 @@
           <div class="container-fluid">
             <div class="row justify-content-center">
               <!-- NAME -->
-              <div class="col-12 content-padding name">
+              <div class="col-12 content-padding">
                 <h1 class="card-h1">NAME</h1>
-                <div class="d-flex justify-content-between">
-                  <label for="FAMILY_NAME">
-                    <input type="text" name="FAMILY_NAME" placeholder="Family Name">
-                  </label>
-                  <label for="FIRST_NAME">
-                    <input type="text" name="FIRST_NAME" placeholder="First Name">
-                  </label>
-                  <label for="MIDDLE_NAME">
-                    <input type="text" name="MIDDLE_NAME" placeholder="Middle Name">
-                  </label>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="FAMILY_NAME">
+                        <input type="text" class="name" name="FAMILY_NAME" placeholder="Family Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label for="FIRST_NAME">
+                        <input type="text" class="name" name="FIRST_NAME" placeholder="First Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label for="MIDDLE_NAME">
+                        <input type="text" class="name" name="MIDDLE_NAME" placeholder="Middle Name">
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- PRESENT ADDRESS -->
-              <div class="col-lg-6 col-md-12 col-sm-12 content-padding">
+              <div class="col-lg-12 col-md-12 col-sm-12 content-padding">
                 <h1 class="card-h1">PRESENT ADDRESS</h1>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex">
                   <!--STREET ADDRESS INPUT, ADD MAX CHAR-->
                   <label for="STREET">
-                    <input type="text" name="STREET" placeholder="Street Address">
+                    <input type="text" class="street" name="STREET" placeholder="Street Address">
                   </label>
                   <!--CITY DROPDOWN-->
                   <select name="CITY">
@@ -233,7 +241,7 @@
                   </select>
                   <!--ZIP DROPDOWN change this text to dropdown!-->
                   <label for="ZIP">
-                    <input type="text" name="ZIP" placeholder="Zip Code">
+                    <input type="text" class="zip" name="ZIP" placeholder="Zip Code">
                   </label>
                 </div>
               </div>
@@ -869,48 +877,73 @@
                 </div>
               </div>
               <!-- FATHER -->
-              <div class="col-12 content-padding name">
+              <div class="col-12 content-padding">
                 <h1 class="card-h1">FATHER'S NAME</h1>
-                <div class="d-flex justify-content-between">
-                  <label for="FATHER_FAMILY_NAME">
-                    <input type="text" name="FATHER_FAMILY_NAME" placeholder="Family Name">
-                  </label>
-                  <label for="FATHER_FIRST_NAME">
-                    <input type="text" name="FATHER_FIRST_NAME" placeholder="First Name">
-                  </label>
-                  <label for="FATHER_MIDDLE_NAME">
-                    <input type="text" name="FATHER_MIDDLE_NAME" placeholder="Middle Name">
-                  </label>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="FATHER_FAMILY_NAME">
+                        <input type="text" name="FATHER_FAMILY_NAME" placeholder="Family Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label for="FATHER_FIRST_NAME">
+                        <input type="text" name="FATHER_FIRST_NAME" placeholder="First Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label for="FATHER_MIDDLE_NAME">
+                        <input type="text" name="FATHER_MIDDLE_NAME" placeholder="Middle Name">
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- MOTHER -->
-              <div class="col-12 content-padding name">
+              <div class="col-12 content-padding">
                 <h1 class="card-h1">MOTHER'S NAME</h1>
-                <div class="d-flex justify-content-between">
-                  <label for="MOTHER_FAMILY_NAME">
-                    <input type="text" name="MOTHER_FAMILY_NAME" placeholder="Family Name">
-                  </label>
-                  <label for="MOTHER_FIRST_NAME">
-                    <input type="text" name="MOTHER_FIRST_NAME" placeholder="First Name">
-                  </label>
-                  <label for="MOTHER_MIDDLE_NAME">
-                    <input type="text" name="MOTHER_MIDDLE_NAME" placeholder="Middle Name">
-                  </label>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="MOTHER_FAMILY_NAME">
+                        <input type="text" name="MOTHER_FAMILY_NAME" placeholder="Family Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+
+                      <label for="MOTHER_FIRST_NAME">
+                        <input type="text" name="MOTHER_FIRST_NAME" placeholder="First Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label for="MOTHER_MIDDLE_NAME">
+                        <input type="text" name="MOTHER_MIDDLE_NAME" placeholder="Middle Name">
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- SPOUSE -->
-              <div class="col-12 content-padding name">
+              <div class="col-12 content-padding">
                 <h1 class="card-h1">SPOUSE'S NAME</h1>
-                <div class="d-flex justify-content-between">
-                  <label for="SPOUSE_FAMILY_NAME">
-                    <input type="text" name="SPOUSE_FAMILY_NAME" placeholder="Family Name">
-                  </label>
-                  <label for="SPOUSE_FIRST_NAME">
-                    <input type="text" name="SPOUSE_FIRST_NAME" placeholder="First Name">
-                  </label>
-                  <label for="SPOUSE_MIDDLE_NAME">
-                    <input type="text" name="SPOUSE_MIDDLE_NAME" placeholder="Middle Name">
-                  </label>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="SPOUSE_FAMILY_NAME">
+                        <input type="text" name="SPOUSE_FAMILY_NAME" placeholder="Family Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label for="SPOUSE_FIRST_NAME">
+                        <input type="text" name="SPOUSE_FIRST_NAME" placeholder="First Name">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label for="SPOUSE_MIDDLE_NAME">
+                        <input type="text" name="SPOUSE_MIDDLE_NAME" placeholder="Middle Name">
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

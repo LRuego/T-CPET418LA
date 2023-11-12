@@ -4,8 +4,8 @@ var y = Math.floor(Math.random() * 6) + 1;
 var img1 = "images/dice" + x + ".png";
 var img2 = "images/dice" + y + ".png";
 
-$('img').eq(0).attr("src", img1);
-$('img').eq(1).attr("src", img2);
+$('img.img1').attr("src", img1);
+$('img.img2').attr("src", img2);
 
 if (x > y) {
     $('h1').text('Player 1 Wins🚩')
